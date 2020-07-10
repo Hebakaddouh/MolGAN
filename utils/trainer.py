@@ -158,6 +158,7 @@ class Trainer:
                     break
 
                 if save_every is not None and epoch % save_every == 0:
+                    print(directory)
                     self.save(directory)
 
             if epoch < epochs:
